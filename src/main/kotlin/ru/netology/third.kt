@@ -10,7 +10,7 @@ fun main() {
     else if (purchaseAmount >= 1_001 && purchaseAmount <= 10_000) 100
     else purchaseAmount / 100 * 5
 
-    val premiumDiscount = if (premiumCustomer == true) purchaseAmount / 100 * 1 else 0
+    val premiumDiscount = if (premiumCustomer) purchaseAmount / 100 * 1 else 0
 
 
     var finalDiscount = discount + premiumDiscount
